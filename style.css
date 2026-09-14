@@ -1,0 +1,120 @@
+:root {
+    --font-display: "QumpellkaNo12", serif;
+    --font-body: "Bona Nova", serif;
+    --font-sans: "Red Rose", sans-serif;
+    --font-mono: "Fantasque Sans Mono", monospace;
+}
+
+@font-face {
+    font-family: "QumpellkaNo12";
+    src: url("/fonts/QumpellkaNo12.otf") format("opentype");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Bona Nova";
+    src: url("/fonts/BonaNova-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Bona Nova";
+    src: url("/fonts/BonaNova-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Bona Nova";
+    src: url("/fonts/BonaNova-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Red Rose";
+    src: url("/fonts/RedRose-Variable.ttf") format("truetype");
+    font-weight: 300 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: url("/fonts/FantasqueSansMono-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: url("/fonts/FantasqueSansMono-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: url("/fonts/FantasqueSansMono-BoldItalic.otf") format("opentype");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: url("/fonts/FantasqueSansMono-Italic.otf") format("opentype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+body {
+    font-family: var(--font-body);
+}
+
+article {
+    border: 1px solid;
+    box-shadow: 5px 5px 15px black;
+}
+
+h1 {
+    font-family: var(--font-display);
+    text-align: center;
+    margin-bottom: .25em;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-sans);
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: .25em;
+}
+
+.icon {
+    -webkit-mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    background-color: transparent !important;
+    -webkit-mask-image: url('/img/iconmask.png');
+}
+
+@media (min-width: 150mm) {
+    article {
+        width: 148mm;
+        height: 210mm;
+    }
+}
