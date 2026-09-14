@@ -5,17 +5,64 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description" content="Short character description">
-    <link rel="icon" href="favicon.png">
-    <title>Character Name</title>
+    <link rel="icon" href="./img/favicon.png">
+    <title>Credits</title>
 
-    <link rel="stylesheet" href="/bootstrap.css">
-    <link rel="stylesheet" href="music/mp3.css">
-    <link rel="stylesheet" href="/fontawesome/all.css">
+    <link rel="stylesheet" href="./src/bootstrap.css">
+    <link rel="stylesheet" href="./fontawesome/all.css">
+    <link rel="stylesheet" href="./src/style.css">
+
+    <script src="../src/bootstrap.bundle.js"></script>
 </head>
+
 <body>
 
-<p><strong>Theme switcher:</strong> <a href="https://albertoroura.com/building-a-theme-switcher-for-bootstrap/">Alberto Roura</a></p>
+    <div class="mode-switch position-fixed z-3" style="bottom: 1em; left: 1em;">
+        <button title="Dark Mode" id="dark" class="btn btn-sm btn-secondary rounded-0">
+            <i class="fasdt fa-moon"></i>
+        </button>
+        <button title="Light Mode" id="light" class="btn btn-sm btn-secondary rounded-0">
+            <i class="fasdt fa-sun"></i>
+        </button>
+        <button title="System Preference" id="system" class="btn btn-sm btn-secondary rounded-0">
+            <i class="fasdt fa-display"></i>
+        </button>
+    </div>
 
+    <div class="card mx-lg-5 my-4 mx-2 mx-sm-auto bg-body-secondary text-body p-3 border-primary overflow-scroll">
+
+        <h1>Credits</h1>
+        
+        <p><strong>CSS:</strong> <a href="https://getbootstrap.com/docs/5.3/">Bootstrap 5.3</a> (and myself)</p>
+        <p><strong>Theme switcher:</strong> <a
+                href="https://albertoroura.com/building-a-theme-switcher-for-bootstrap/">Alberto Roura</a></p>
+        <p><strong>MP3 Player:</strong> <a href="https://infinite-dreams.neocities.org/interests/music/js-walkman-mp3-player/js-walkman-mp3-player">Infinite Dreams</a></p>
+
+    </article>
+
+
+    <script>
+        function setTheme(mode = 'auto') {
+            const userMode = localStorage.getItem('bs-theme');
+            const sysMode = window.matchMedia('(prefers-color-scheme: light)').matches;
+            const useSystem = mode === 'system' || (!userMode && mode === 'auto');
+            const modeChosen = useSystem ? 'system' : mode === 'dark' || mode === 'light' ? mode : userMode;
+
+            if (useSystem) {
+                localStorage.removeItem('bs-theme');
+            } else {
+                localStorage.setItem('bs-theme', modeChosen);
+            }
+
+            document.documentElement.setAttribute('data-bs-theme', useSystem ? (sysMode ? 'light' : 'dark') : modeChosen);
+            document.querySelectorAll('.mode-switch .btn').forEach(e => e.classList.remove('text-body'));
+            document.getElementById(modeChosen).classList.add('text-body');
+        }
+
+        setTheme();
+        document.querySelectorAll('.mode-switch .btn').forEach(e => e.addEventListener('click', () => setTheme(e.id)));
+        window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', () => setTheme());
+    </script>
 </body>
+
 </html>

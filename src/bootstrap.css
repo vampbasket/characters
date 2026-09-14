@@ -1,18 +1,74 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: 'David Libre';
-  src: url(/fonts/david-libre.ttf), serif;
+  font-family: "QumpellkaNo12";
+  src: url("../fonts/QumpellkaNo12.otf") format("opentype");
+  font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'Chonburi';
-  src: url(/fonts/chonburi.ttf), serif;
+  font-family: "Bona Nova";
+  src: url("../fonts/BonaNova-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'Jost';
-  src: url(/fonts/jost.ttf), sans-serif;
+  font-family: "Bona Nova";
+  src: url("../fonts/BonaNova-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bona Nova";
+  src: url("../fonts/BonaNova-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Red Rose";
+  src: url("../fonts/RedRose-Variable.ttf") format("truetype");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fantasque Sans Mono";
+  src: url("../fonts/FantasqueSansMono-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fantasque Sans Mono";
+  src: url("../fonts/FantasqueSansMono-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fantasque Sans Mono";
+  src: url("../fonts/FantasqueSansMono-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fantasque Sans Mono";
+  src: url("../fonts/FantasqueSansMono-Italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
 }
 /*!
  * Bootstrap  v5.3.8 (https://getbootstrap.com/)
@@ -86,10 +142,10 @@
    --bs-dark-border-subtle: #9ea1a3;
    --bs-white-rgb: 255, 255, 255;
    --bs-black-rgb: 0, 0, 0;
-   --bs-font: "David Libre", "Garamond", "Georgia", serif;
-   --bs-font-lg-header: "Chonburi", "Georgia", serif;
-   --bs-font-sm-header: "Jost", "Trebuchet MS", sans-serif;
-   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+   --bs-font: "Bona Nova", "Garamond", "Georgia", serif;
+   --bs-font-lg-header: "QumpellkaNo12", "Georgia", serif;
+   --bs-font-sm-header: "Red Rose", "Trebuchet MS", sans-serif;
+   --bs-font-monospace: "Fantasque Sans Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
    --bs-body-font-family: var(--bs-font);
    --bs-body-font-size: 1rem;
