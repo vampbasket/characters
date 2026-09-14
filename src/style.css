@@ -91,17 +91,17 @@ h1 {
     margin-bottom: .25em;
 }
 
-h2,
+h2 {
+    font-family: var(--font-display);
+    font-size: 1.8em;
+    margin-bottom: .25em;
+}
+
 h3,
 h4,
 h5,
 h6 {
     font-family: var(--font-sans);
-}
-
-h2 {
-    font-size: 1.8em;
-    margin-bottom: .25em;
 }
 
 .icon {
@@ -110,6 +110,16 @@ h2 {
     -webkit-mask-position: center;
     background-color: transparent !important;
     -webkit-mask-image: url('../img/iconmask.png');
+}
+
+.palette {
+    font-family: var(--font-mono);
+    text-align: center;
+    padding: auto;
+}
+
+.palette:hover {
+    background-color: var(--bs-body-bg) !important;
 }
 
 @media (min-width: 150mm) {
