@@ -7,14 +7,14 @@
 
 @font-face {
     font-family: "QumpellkaNo12";
-    src: url("/fonts/QumpellkaNo12.otf") format("opentype");
+    src: url("../fonts/QumpellkaNo12.otf") format("opentype");
     font-weight: 400;
     font-display: swap;
 }
 
 @font-face {
     font-family: "Bona Nova";
-    src: url("/fonts/BonaNova-Regular.ttf") format("truetype");
+    src: url("../fonts/BonaNova-Regular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -22,7 +22,7 @@
 
 @font-face {
     font-family: "Bona Nova";
-    src: url("/fonts/BonaNova-Bold.ttf") format("truetype");
+    src: url("../fonts/BonaNova-Bold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -30,7 +30,7 @@
 
 @font-face {
     font-family: "Bona Nova";
-    src: url("/fonts/BonaNova-Italic.ttf") format("truetype");
+    src: url("../fonts/BonaNova-Italic.ttf") format("truetype");
     font-weight: 400;
     font-style: italic;
     font-display: swap;
@@ -38,7 +38,7 @@
 
 @font-face {
     font-family: "Red Rose";
-    src: url("/fonts/RedRose-Variable.ttf") format("truetype");
+    src: url("../fonts/RedRose-Variable.ttf") format("truetype");
     font-weight: 300 700;
     font-style: normal;
     font-display: swap;
@@ -46,7 +46,7 @@
 
 @font-face {
     font-family: "Fantasque Sans Mono";
-    src: url("/fonts/FantasqueSansMono-Regular.otf") format("opentype");
+    src: url("../fonts/FantasqueSansMono-Regular.otf") format("opentype");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -54,7 +54,7 @@
 
 @font-face {
     font-family: "Fantasque Sans Mono";
-    src: url("/fonts/FantasqueSansMono-Bold.otf") format("opentype");
+    src: url("../fonts/FantasqueSansMono-Bold.otf") format("opentype");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -62,7 +62,7 @@
 
 @font-face {
     font-family: "Fantasque Sans Mono";
-    src: url("/fonts/FantasqueSansMono-BoldItalic.otf") format("opentype");
+    src: url("../fonts/FantasqueSansMono-BoldItalic.otf") format("opentype");
     font-weight: 700;
     font-style: italic;
     font-display: swap;
@@ -70,7 +70,7 @@
 
 @font-face {
     font-family: "Fantasque Sans Mono";
-    src: url("/fonts/FantasqueSansMono-Italic.otf") format("opentype");
+    src: url("../fonts/FantasqueSansMono-Italic.otf") format("opentype");
     font-weight: 400;
     font-style: italic;
     font-display: swap;
