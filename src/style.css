@@ -109,7 +109,7 @@ h2 {
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: center;
     background-color: transparent !important;
-    -webkit-mask-image: url('/img/iconmask.png');
+    -webkit-mask-image: url('../img/iconmask.png');
 }
 
 @media (min-width: 150mm) {
