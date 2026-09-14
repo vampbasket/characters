@@ -19,19 +19,19 @@
 
 <body>
 
-    <div class="mode-switch position-fixed" style="bottom: 1em; left: 1em;">
-        <button title="Dark Mode" id="dark" class="btn btn-sm btn-default btn-outline-secondary rounded-0">
+    <div class="mode-switch position-fixed z-3" style="bottom: 1em; left: 1em;">
+        <button title="Dark Mode" id="dark" class="btn btn-sm btn-default btn-secondary rounded-0">
             <i class="fasdt fa-moon"></i>
         </button>
-        <button title="Light Mode" id="light" class="btn btn-sm btn-default btn-outline-secondary rounded-0">
+        <button title="Light Mode" id="light" class="btn btn-sm btn-default btn-secondary rounded-0">
             <i class="fasdt fa-sun"></i>
         </button>
-        <button title="System Preference" id="system" class="btn btn-sm btn-default btn-outline-secondary rounded-0">
+        <button title="System Preference" id="system" class="btn btn-sm btn-default btn-secondary rounded-0">
             <i class="fasdt fa-display"></i>
         </button>
     </div>
 
-    <div class="position-fixed" style="bottom: 1em; right: 1em;">
+    <div class="position-fixed z-3" style="bottom: 1em; right: 1em;">
         <div class="btn-group dropup">
             <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
                 aria-expanded="false">
@@ -41,6 +41,7 @@
                 <li><a class="dropdown-item" href="#introduction">Introduction</a></li>
                 <li><a class="dropdown-item" href="#general">General</a></li>
                 <li><a class="dropdown-item" href="#physicality">Physicality</a></li>
+                <li><a class="dropdown-item" href="#personality">Personality</a></li>
                 <li><a class="dropdown-item" href="#relations">Relations</a></li>
                 <li><a class="dropdown-item" href="#history">History</a></li>
                 <li><a class="dropdown-item" href="#supernatural">Supernatural</a></li>
@@ -51,11 +52,11 @@
 
     <article class="my-4 mx-2 mx-sm-auto bg-body-secondary text-body p-3 border-primary">
 
-        <h1>Character Name</h1>
+        <h1 id="introduction">Character Name</h1>
 
         <img src="../img/icon.png" class="icon d-block w-50 mx-auto my-5">
 
-        <h2 id="introduction"><i class="fasdt fa-sparkle"></i> Introduction</h2>
+        <h2><i class="fasdt fa-sparkle"></i> Introduction</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores dicta, quidem facilis ipsa repudiandae
             recusandae dolorem delectus unde! Saepe sapiente officiis in qui, quia atque at similique porro quas totam?
         </p>
